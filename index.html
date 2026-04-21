@@ -1,0 +1,33 @@
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <title>Notepad</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/rxjs@7/dist/bundles/rxjs.umd.min.js"></script>
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+   <header>
+   <img id="image" src="images/PDA_render.png">
+      <div class="container layout">
+	     <h1 class="title">PDA</h1>
+		 <p class="title"><strong>Ваш персональний комп'ютер для запису нотаток.</strong></p>
+	  </div>
+   </header>
+   
+   
+   <div class="container layout">
+      <section>
+	     <h2 class="title">Каталог</h2>
+		 <input class="input_style" id="noteInput" placeholder="Введи нотатку">
+		 <button id="addBtn" class="button_style">Додати</button>
+		 
+		 <div id="notesList"></div>
+		 
+		 <div id="pagination"></div>
+	  </section>
+   </div>
+   
+</body>
+</html>

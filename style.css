@@ -1,0 +1,85 @@
+:root {
+	--text: #597938;
+	--bgcolor: #000000;
+	--radius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url("images/background.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	color: var(--text);
+}
+
+
+.container {
+  width: 1020px;
+  max-width: 100%;
+  margin: 0 auto 20px auto;
+  padding: 0 24px;
+  background-color: rgba(0, 0, 0, 0.36);
+  border-radius: var(--radius);
+}
+
+.button_style {
+	color: var(--text);
+	padding: 0 24px;
+	background-color: rgba(0, 0, 0);
+	border-radius: var(--radius);
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.button_style:hover {
+	background: #ccc;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+.layout section {
+  flex: 1;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input_style {
+	background: rgba(120, 164, 73, 0.9);
+	color: #000000;
+}
+
+.input_style::placeholder {
+	color: #000000;
+}
+
+.title {
+  padding: 20px;
+  margin-bottom: 16px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.note_text {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 16px;
+	color: var(--text);
+}
+
+
+#image {
+	position: absolute;
+	width: 160px;
+	user-select: none;
+}
